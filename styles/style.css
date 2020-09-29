@@ -1,0 +1,524 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    width: 100%;
+    height: 90vh;
+    min-height: 800px;
+    padding: 40px 2%;
+    /* max-height: 700px; */
+    background-size: cover;
+    background-position: center;
+    background-image: url(../imagens/capa.png);
+}
+
+header nav{
+    float: right;
+}
+
+nav.mobile-menu{
+    cursor: pointer;
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url(../imagens/icone.png);
+    background-size: 100% 100%;
+}
+
+nav.mobile-menu:hover ul{
+    opacity: 1;
+}
+
+nav.mobile-menu ul{
+    opacity: 0;
+    transition: 1s;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left:0;
+    top:80px;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav.mobile-menu ul li{
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+    transition: .6s;
+}
+
+nav.mobile-menu ul li:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+nav.mobile-menu ul li a{
+    color: black;
+    text-decoration:none;
+}
+
+header .logo{
+    width: 160px;
+    float:left;
+    height: 40px;
+    background-color: cornflowerblue;
+    text-align: center;
+    line-height: 40px;
+}
+
+header nav.desktop-menu ul{
+    list-style: none;
+}
+
+header nav.desktop-menu li{
+    float: left;
+    padding: 0 20px;
+}
+
+header nav.desktop-menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.chamada1{
+    float: right;
+    margin: 140px 150px;
+    max-width: 600px;
+}
+
+.chamada1 h2{
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.chamada1 p{
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+}
+
+.secao1{
+    width: 100%;
+    background-color: #472562;
+    padding: 0px 2%;
+    height: 400px;
+}
+
+.secao1 .container{
+    max-width: 1000px;
+    height: calc(100% + 40px);
+}
+
+.texto-secao1{
+    float:left;
+    color: white;
+    width: 50%;
+    margin-top: 60px;
+    padding-left: 80px;
+    position: relative;
+    left: 45px;
+}
+
+.texto-secao1 h2{
+    font-size: 26px;;
+}
+
+.texto-secao1 p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.texto-secao1 ul{
+    font-size: 15px;
+    list-style-position: outside;
+    padding-left: 15px;
+}
+
+.texto-secao1 ul li{
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.button1{
+    background-color: #FF703D;
+    width: 165px;
+    height: 44px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 30px;
+}
+
+.device-secao1{
+    float: left;
+    width: 50%;
+    position: relative;
+    top: -40px;
+    height: 100%;
+    background-image: url(../imagens/device.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.secao2{
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: white;
+    text-align: center;
+}
+
+.secao2 .container{
+    max-width: 1000px;
+}
+
+.secao2 p{
+    margin-top: 30px;
+    max-width: 900px;
+    display: inline-block;
+}
+
+.secao2 img{
+    position: relative;
+    top: 70px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.secao3{
+    width: 100%;
+}
+
+.parte1{
+    color: white;
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background-color: #835FA7;
+}
+
+.warper-parte1{
+    max-width: 600px;
+    float: right;
+    padding:0 30px;
+}
+
+.parte1 h2{
+    font-size: 23px;
+    font-style: italic;
+}
+
+.parte1 p{
+    font-size: 15px; 
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.parte2{
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background-color: white;
+}
+
+.sobre-autor{
+    float: left;
+    max-width: 600px;
+    padding-left: 30px;
+}
+
+.titulo-autor{
+    float: left;
+    width: 100%;
+}
+
+.wraper-titulo-autor{
+    float: left;
+}
+
+.titulo-autor h2{
+    padding-right: 20px;
+}
+
+.titulo-autor p{
+    color: gray;
+}
+
+.titulo-autor .img-autor{
+    float: left;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -4px;
+    background-color: gray;
+    border-radius: 20px;
+}
+
+.texto-autor{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.slider-bullets{
+    width: 100%;
+    padding-left: 30px;
+    float: left;
+    margin-top: 12px;
+}
+
+.slider-bullets span{
+    width: 16px;
+    height: 16px;
+    float: left;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 8px;
+    background-color: rgb(200, 200, 200);
+}
+
+.secao4{
+    background-color: #472563;
+    padding: 100px 0;
+}
+
+.form{
+    float: left;
+    width: 50%;
+    color: white;
+    padding-left: 10px;;
+}
+
+.form h2{
+    font-size: 23px;
+}
+
+.form p{
+    font-size: 15px;
+    max-width: 400px;
+    padding-right: 10px;
+}
+
+.form form{
+    margin-top: 15px;
+}
+
+.form input[type=text]{
+    width: 90%;
+    max-width: 480px;
+    margin-top: 5px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid rgb(200, 200, 200)
+}
+
+.form textarea{
+    width: 90%;
+    max-width: 480px;
+    padding: 15px;
+    border: 1px solid rgb(200, 200, 200);
+    height: 160px;
+    margin-top: 8px;
+}
+
+.form input[type=submit]{
+    border:0;
+    background-color: #FF703D;
+    width: 165px;
+    height: 44px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.map-wraper{
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.map-wraper h2{
+    font-size: 23px;
+    color: white;
+    font-weight: normal;
+}
+
+.map-wraper3{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+}
+
+.map-wraper2{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.map{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 5px solid rgb(200, 200, 200);
+}
+
+footer{
+    padding: 40px 2%;
+    background-color: #192123;
+    color: white;
+
+}
+
+footer p:nth-of-type(1){
+    float:left;
+    font-size: 14px;
+}
+
+footer p:nth-of-type(2){
+    float:right;
+    font-size: 14px;
+}
+
+@media (max-width: 768px){
+    header{
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        padding: 40px 2%;
+    }
+    nav.desktop-menu{
+        display: none;
+    }
+    nav.mobile-menu{
+        display: block;
+    }
+    .chamada1{
+        float: none;
+        margin: 100px 0;
+        max-width: none;
+        width:100%;
+        text-align: center;
+    }
+    .chamada1 h2{
+        color: white;
+        font-size: 30px;
+        padding: 0 10px;
+        font-weight: normal;
+    }
+    
+    .chamada1 p{
+        font-size: 15px;
+        color: white;
+        margin-top: 10px;
+    }
+    .secao1{
+        height: auto;
+        padding: 40px 2%;
+        text-align: center;
+    }
+    .texto-secao1{
+        width: 100%;
+        float: none;
+        margin-top: 0;
+        padding-left: 0;
+        position: static;
+        display: inline-block;
+    }
+    .texto-secao1 ul{
+        display: inline-block;
+        margin: 10px;
+    }
+    .texto-secao1 ul li{
+        float: none;
+        text-align: left;
+    }
+    .button1{
+        display: inline-block;
+    }
+    .device-secao1{
+        display: none;
+    }
+    .secao2{
+        padding: 40px 2%;
+    }
+    .secao4 .container{
+        text-align: center;
+    }
+    .form{
+        float:none;
+        width: 100%;
+    }
+    .form p{
+        display: inline-block;
+    }
+    .map-wraper{
+        width: 100%;
+        float:none;
+        padding: 0 4%;
+        margin-top: 40px;
+    }
+    .map-wraper3{
+        display: inline-block;
+        width: 80%;
+        padding-top: 80%;
+    }
+    .map-wraper2{
+        padding-top: 0;
+        height: 100%;
+        max-width:none;
+    }
+}
+
+@media (max-width: 580px){
+    .parte1{
+        width: 100%;
+        padding: 40px 0;
+    }
+    .parte2{
+        width: 100%;
+        padding: 40px 0;
+    }
+    .secao2 img{
+        top: 16px;
+        margin-top: 20px;
+    }
+    footer{
+        text-align: center;
+    }
+    
+    footer p:nth-of-type(1){
+        float:none;
+    }
+    
+    footer p:nth-of-type(2){
+        float:none;
+        margin-top: 10px;
+    }
+}
